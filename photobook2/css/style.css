@@ -1,0 +1,153 @@
+html{
+    font-size: 100%;
+}
+body{
+    color: #333;
+    font-size: 0.875rem;
+}
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+   
+}
+a{
+    display: block;
+}
+.header-logo img{
+max-width: 160px;
+margin-top: 60px;
+margin-bottom:15px;
+}
+.main-visual{
+    margin-bottom: 60px;
+}
+img{
+    max-width: 100%;
+    }
+ul{
+    list-style: none;
+}
+.inner{
+    width: 800px;
+    margin: 0 auto;
+}
+.section-title{
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.list{
+justify-content: space-between;
+margin-bottom: 45px;
+display: flex;
+flex-wrap: wrap;
+}
+.list li{
+    width: 49%;
+    margin-bottom: 15px;
+}
+.list li img {
+    vertical-align: bottom;
+}
+.index{
+    background-color: #f5f5f5;
+    margin-bottom: 60px;
+    padding:40px 60px;
+}
+.index-inner{
+    padding: 30px;
+    border: solid 1px #333;
+}
+ .index-li{
+    display: table;
+    margin: 0 auto;
+}
+.index-li li{
+    margin-bottom: 20px;
+}
+.index-li li:last-child{
+    margin-bottom: 0;
+}
+.flex{
+    display: flex;
+}
+.detail{
+    background-color: #f5f5f5;
+    margin-bottom: 60px;
+    padding: 60px;
+}
+.detail dl{
+    border-right:solid 1px #333;
+    padding-right: 40px;
+    width: 35%;
+}
+.detail dd{
+    margin-bottom: 10px;
+}
+.detail dd:last-child{
+    margin-bottom: 0;
+}
+dl dt{
+    width: 35%;
+    font-weight: bold;
+}
+dl dd{
+    margin: 0;
+    padding: 0;
+}
+.detail .text {
+    width: 65%;
+    padding-left: 40px;
+}
+.detail .text p{
+    margin-bottom: 20px;
+}
+.detail a{
+    color: #333;
+    opacity: 0.8;
+}
+footer{
+    margin-top: 60px;
+    padding: 15px 0;
+    font-size: 0.625rem;
+    text-align: center;
+}
+@media (max-width:1024px){
+    .inner{
+        padding: 0 20px;
+    }
+    .img{
+        max-width: 100%;
+    }
+    header{
+        padding: 0 10px;
+        margin-top: 60px;
+    }
+    .index{
+        padding: 40px 20px;
+    }
+    .list{
+        flex-direction: column  ;
+    }
+    .list li{
+        width: 100%;
+        text-align: center;
+    }
+    .detail{
+        padding: 40px 20px;
+    }
+    .detail dl{
+        width: 100%;
+        border-right: none;
+        border-bottom: solid 1px #333;
+        padding: 0 0 40px 0;
+    }
+    .detail .text{
+        width: 100%;
+        padding: 40px 0 0 0 ;
+    }
+    .detail .flex{
+        flex-direction: column;
+    }
+}

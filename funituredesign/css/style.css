@@ -1,0 +1,287 @@
+html{
+    font-size: 100%;
+}
+body{
+    font-size: 0.85rem;
+    color: #333;
+    min-height: 100vh;
+    position: relative;
+}
+a {
+    text-decoration: none;
+    color: #333;
+    transition: all 0,5s;
+}
+img{
+    max-width: 100%;
+}
+li{
+    list-style: none;
+}
+.wrapper{
+    width: 100%;
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position:fixed;
+    z-index: 10;
+    left: 0;
+    right: 0;
+}
+.site-title a{
+  width: 180px;
+  line-height: 1px;
+  display: block;
+}
+.open #navi{
+    left: 0;
+    opacity: 1;
+}
+#navi{
+    position:fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    color: #fff;
+    padding: 36px 50px;
+    transition: all 0.5s;
+    z-index: 20;
+    opacity: 0;
+}
+nav li{
+    margin-bottom: 14px;
+}
+nav a{
+    color: #fff;
+}
+.open #mask{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .8;
+    z-index: 10;
+    cursor: pointer;
+}
+.toggle_btn{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    transition: all 0.5s;
+    cursor: pointer;
+    z-index: 20;
+}
+.open .toggle_btn span:nth-child(1){
+    transform: translateY(4px) rotate(-45deg);
+}
+.open .toggle_btn span:nth-child(2){
+    transform: translateY(-4px) rotate(45deg);
+}
+.toggle_btn span:nth-child(1){
+    top: 10px;
+}
+.toggle_btn span:nth-child(2){
+    bottom: 10px;
+}
+.open .toggle_btn span{
+    background-color: #fff;
+}
+.toggle_btn span{
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #333;
+    border-radius: 4px;
+    transition: all 0.5s;
+}
+#mask{
+    display: none;
+    transition: all 0.5s;
+}
+
+#top{
+    padding-top: 80px;
+    padding-bottom: 160px;
+}
+.product-list{
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: space-between;
+}
+.product-list li{
+    width: 23%;
+    margin-bottom: 40px;
+}
+.product-list img{
+    margin-bottom: 10px;
+    vertical-align: top;
+}
+.product-list p{
+    font-size: 0.75rem;
+}
+.link-text{
+    display: block;
+    text-align: center;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+}
+footer .menu{
+    display: flex;
+}
+footer .menu li{
+    font-size: 0.75rem;
+    margin-right: 30px;
+}
+footer .copyright{
+    font-size: 0.625rem;
+}
+
+.content{
+    padding-top: 120px;
+    padding-bottom: 160px;
+}
+.page-title{
+font-size: 0.875rem;
+font-weight: normal;
+margin-bottom: 30px;
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+}
+.pagination li{
+    padding: 0 20px;
+}
+
+#item{
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+.item-img{
+    width: 50%;
+}
+.item-text{
+    width: 42%;
+}
+.item-text p{
+    margin-bottom: 30px;
+    text-align: justify;
+}
+.item-text dl{
+    display: flex;
+    flex-wrap: wrap;
+}
+.item-text dt{
+    width: 30%;
+}
+.item-text dd{
+    width: 70%;
+}
+.link-text{
+    display: block;
+    text-align: center;
+}
+
+#about{
+    max-width: 600px;
+}
+#about p{
+    line-height: 1.9;
+    margin-bottom: 30px;
+}
+
+#company{
+    max-width: 600px;
+}
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+#company dt{
+ width: 30%;
+ border-bottom:solid 1px #dcdbdb ; 
+ padding: 20px 10px;
+}
+#company dd{
+  width: 70%;
+  border-bottom:solid 1px #dcdbdb ; 
+  padding: 20px 10px;
+}
+#company dt:last-of-type{
+    border-bottom: none;
+}
+#company dd:last-of-type{
+    border-bottom: none;
+}
+.map{
+    filter: grayscale(1);
+}
+.map iframe{
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+.link-text{
+    transition: all .3s ease;
+}
+.link-text:hover{
+    opacity: 0.7;
+}
+@media(max-width:900px){
+   .product-list li{
+    width: 47%;
+   }
+   footer{
+    flex-direction: column;
+   }
+   footer .menu{
+    margin-bottom: 5px;
+   }
+   .item{
+    flex-direction: column;
+   }
+   .item-img{
+    width: 100%;
+    margin-bottom: 30px;
+   }
+   .item-text{
+    width: 100%;
+   }
+   #company dl{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+   }
+   #company dt{
+    width: 100%;
+    border-bottom: none;
+    padding-bottom: 5px;
+   }
+   #company dd{
+    width: 100%;
+    padding-bottom: 5px;
+   }
+}

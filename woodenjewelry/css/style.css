@@ -1,0 +1,138 @@
+html{
+    font-size: 100%;
+}
+body{
+    font-family: "Crimson Text", serif;
+    padding: 0;
+    margin: 0;
+}
+.img{
+    max-width: 100%;
+    vertical-align: bottom;
+    
+}
+a{
+    color: #2d2d2d;
+    text-decoration: none;
+}
+.main-visual{
+    width: 90vw;
+    margin: 4% auto 0 auto;
+}
+header{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 90vw;
+    margin:0 auto 30px auto;
+    padding: 32px 0;
+}
+.header-nav li a{
+    margin-left: 30;
+}
+.header-logo .img{
+    width: 110px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+header ul{
+    display: flex;
+    list-style: none;
+}
+header ul li{
+    margin-right: 30px;
+    font-size: 0.875rem;
+}
+header li:last-child{
+    margin-right: 0;
+}
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 18px;
+}
+.section-title{
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 4px;
+}
+.section-title-en{
+    margin-bottom: 25px;
+    display: inline-block;
+}
+.content1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.content-text1{
+    width: 50%;
+    margin: 0 7%;
+}
+.content1 .content-img1{
+    width: 50%;
+} 
+.content2{
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.content2 .content-img2{
+    width: 50%;
+    margin-bottom: 60px;
+}
+.content2 .content-text2{
+    width: 50%;
+    margin: 0 7%;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    font-size: 0.875rem;
+}
+footer .img{
+    width: 110px;
+}
+@media(max-width:767px){
+.content1{
+    flex-direction: column;
+}
+.content2{
+    flex-direction: column-reverse;
+}
+.section-title{
+    font-size: 1,25rem;
+}
+.main-visual{
+    width: 100%;
+    margin: 0;
+}
+.main-visual .img{
+    height: 50vh;
+    width: 100%;
+    object-fit: cover;
+}
+header{
+    padding:20px 18px;
+    width: 100%;
+}
+.section-title{
+    font-size: 1.125rem;
+}
+content .content-img1{
+    width: 100%;
+    margin-bottom: 10px;
+    }
+content .content-img2{
+    width: 100%;
+    margin-bottom: 10px;
+}
+content .content-text1{
+        padding: 0;
+    }
+ content .content-text2{
+        padding: 0;
+    }
+
+}
