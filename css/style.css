@@ -4,7 +4,6 @@ html{
 }
 body{
     color: #121212;
-    font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
 }
 a{
     color: #fff;
@@ -14,10 +13,11 @@ li{
     list-style: none;
 }
 img{
-    max-width: 100%;
+    width: 100%;
 }
 p{
     font-size: 120%;
+    font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
 }
 
 .header-logo{
@@ -52,7 +52,7 @@ p{
 }
 .nav-menu a{
     font-weight: bold;
-    font-size: 120%;
+    font-size: 1.75rem;
 }
 .hamburger{
     width: 100px;
@@ -111,7 +111,7 @@ p{
     width: 100%;
     height: 600px;
     object-fit: cover;
-    margin-bottom: 120px;
+    
 }
 #main-visual .text{
     font-weight: bold;
@@ -135,16 +135,18 @@ p{
     padding:0 5%;
 }
 .section-title{
+    font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;;
     font-size: 250%;
     text-align: left;
     margin-bottom: 60px;
     margin: 0 0 20px;
-    padding: 0 0 10px;
+    padding: 20px 0 10px;
     background: url(https://www.round1.co.jp/common/img/bg_dot01.gif) repeat-x left bottom;
 }
 #charm{
-    height: 400px;
-    margin-bottom: 60px;
+    height: 900px;
+    background-color: #a5d2fb;
+    padding-bottom: 60px;
 }
 .charmcontent{
    width: 100%;
@@ -154,21 +156,26 @@ p{
     margin:0 auto;
     margin-top: 30px;
 }
+.charmcontent img{
+    width: 50%;
+}
 .charmcontent .name{
+    text-align: center;
     font-size: 150%;
     font-weight: bold;
     margin-bottom: 20px;
     padding: 10px;
 }
 .charmcontent p{
-    padding: 10px;
+    text-align: left;
+    margin-bottom: 10px;
     font-size: 150%;
 }
 .charmcontent li{
     width: 31.9%;
     box-sizing: border-box;
-    font-size: 1em;
-    line-height: 1.5em;
+    font-size: 1.25em;
+    line-height: 3.5em;
     text-align: center;
     padding:15px;
     padding-bottom: 60px;
@@ -178,23 +185,58 @@ p{
 }
 
 #facility{
-    margin-bottom: 60px;
+    background-color: #f0f0f0;
 }
 .item{
     width: 48%;
     text-align: center;
 }
 .item p{
-    margin-bottom: 30px;
+    font-size: 1.75rem;
     padding: 15px;
+    text-align: left;
+    margin-bottom: 5px ;
 }
 .item-title{
+    font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
     font-size: 250%;
     margin-bottom: 20px;
+    text-align: center;
 }
 .item img{
     width: 100%;
     border-radius: 20%;
+}
+.item .more{
+    text-align: right;
+    font-size: 20px;
+    margin-top: 24px;
+    position: relative;
+}
+.item .more::after{
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    content: '';
+    width: 20%;
+    height: 1px;
+    background: #3E4550;
+    transform: scale(1, 1);
+    transform-origin: left top;
+    transition: transform 0.3s;
+}
+.item .more a{
+    font-size: 2rem;
+    margin-right: 75px;
+    color:#121212; ;
+}
+.sub{
+font-weight: bold;
+font-size: 1.9rem;
+text-align: center;
+margin-bottom: 30px;
+padding: 15px;
+font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
 }
 .bath{
     display: flex;
@@ -214,10 +256,12 @@ p{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 120px;
+    padding-bottom: 120px;
 }
 #plan{
-    padding: 0 16px;   
+    height: 760px;
+    background-color: #a5d2fb;
+    padding: 0 50px;   
 }
 table{
     width: 100%;
@@ -226,46 +270,74 @@ table{
 }
 .plan-table{
     width: 100%;
-    border-top: solid 1px #808080 ;
-    border-left: solid 1px #808080;
+    border-top: solid 3px #fff ;
+    border-left: solid 3px #fff;
 }
 .adult{
     width: 16%;
 }
  th,td{
+    font-size: 150%;
     font-weight: bold;
     padding: 30px;
     margin: 30px;
-    border-right: solid 1px #c3c3c3;
-    border-bottom: solid 1px #c3c3c3;
+    border-right: solid 3px #fff;
+    border-bottom: solid 3px #fff;
     text-align: center;
 }
 th{
-    background-color: #b0c4de;
+    color: #fff;
+    background-color: #024399;
 }
 table td:empty {
     background-image: linear-gradient(to top right,
     transparent, transparent 49%,
-       black 49%,
-       black 51%,
+    #fff 49%,
+    #fff 51%,
       transparent 51%, transparent);
       background-color: none;
   }
   table th:empty {
     background-image: linear-gradient(to top right,
     transparent, transparent 49%,
-       black 49%,
-       black 51%,
+    #fff 49%,
+    #fff 51%,
       transparent 51%, transparent);
   }
 .uni-student, .high-student{
     width: 28%;
 }
+#plan p{
+   font-size: 1.5rem;
+}
+#footer{
+    height: 450px;
+    background-color: #191970;
+    color: #fff;
+}
+
 #footer p{
     height: 100px;
     text-align: center;
-    background-color: #191970;
-    color: #fff;
+    background-color: #191970;  
+    font-size: 1.75rem;
+}
+#footer #summary{
+    display: contents;
+}
+#footer li p{
+    text-align: left;
+    font-size: 2rem;
+}
+#footer .footer-menu{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 60px 0;
+}
+.footer-menu li{
+    border-right: solid 1px #fff;
+    font-size: 1.25rem;
+    padding:0 20px;
 }
 
 @media(max-width:960px){
@@ -284,13 +356,67 @@ table td:empty {
         color: #579cf7;
     }
     #charm{
-        margin-bottom: 120px;
+        height:1000px;
+    }
+    p .name{
+        font-size: 1.25rem;
     }
     table{
         width: 100%;
     }
+    #plan{
+        height: 900px;
+    }
 }
 /*スマホレスポンシブ*/
 @media(max-width:768px){
+    #main-visual img{
+        height: 300px;
+    }
+    #main-visual .text{
+       position: absolute;
+       top: 25%;
+        left: 8%;
+        right: 0;
+    }
+    #main-visual p{
+        font-weight: bold;
+        font-size: 80%;
+        color: #579cf7;
+    }
+    #charm{
+        height: 1800px;
+    }
+    .charmcontent{
+        display: block;
+        justify-content: space-between;
+    }
+    .charmcontent  ul{
+        align-content: center;
+    }
+    .charmcontent li{
+        width: 80%;
+        margin:0 auto;
+        padding: 0;
+    }
+    .charmcontent img{
+        width: 30%;
+        height: 30%;
 
+    }
+    .item{
+        margin: 0 auto;
+    }
+    .item img{
+        margin-bottom: 20px;
+    }
+    .bath{
+        display: block;
+    }
+    .bar{
+        display: block;
+    }
+    .viking{
+        display: block;
+    }
 }
