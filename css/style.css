@@ -116,22 +116,6 @@ p{
     object-fit: cover;
     
 }
-#main-visual .text{
-    font-weight: bold;
-    position: absolute;
-    top: 45%;
-    left: 15%;
-    right: 0;
-    
-}
-#main-visual a{
-    margin: 0 auto;
-    font-size: 3rem;
-}
-#main-visual p{
-    font-size: 120%;
-    color: #579cf7;
-}
 .wrapper{
     max-width: 1960px;
     margin: 0 auto;
