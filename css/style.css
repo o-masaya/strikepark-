@@ -19,7 +19,6 @@ img{
     width: 100%;
 }
 p{
-    font-size: 120%;
     font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
 }
 
@@ -112,7 +111,7 @@ p{
 }
 #main-visual img{
     width: 100%;
-    height: 600px;
+    height: 900px;
     object-fit: cover;
     
 }
@@ -125,9 +124,8 @@ p{
     font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;;
     font-size: 250%;
     text-align: left;
-    margin-bottom: 60px;
-    margin: 0 0 20px;
-    padding: 20px 0 10px;
+    margin-bottom: 80px;
+    padding: 80px 0 15px 0;
     background: url(https://www.round1.co.jp/common/img/bg_dot01.gif) repeat-x left bottom;
 }
 #charm{
@@ -144,19 +142,21 @@ p{
     margin-top: 30px;
 }
 .charmcontent img{
-    width: 50%;
+    width: 30%;
+    height: auto;
+    object-fit: cover;
 }
 .charmcontent .name{
     text-align: center;
-    font-size: 150%;
+    font-size: 2rem;
     font-weight: bold;
     margin-bottom: 20px;
     padding: 10px;
 }
 .charmcontent p{
     text-align: left;
-    margin-bottom: 10px;
-    font-size: 150%;
+    font-size:1.25rem;
+    line-height: normal;
 }
 .charmcontent li{
     width: 31.9%;
@@ -166,12 +166,14 @@ p{
     text-align: center;
     padding:15px;
     padding-bottom: 60px;
+    margin-bottom: 80px;
     position: relative;
     background: #fff;
     border: #191970 solid 0.4167em;
 }
 
 #facility{
+    height: auto;
     background-color: #f0f0f0;
 }
 .item{
@@ -243,17 +245,27 @@ font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho",
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 120px;
+    padding-bottom: 200px;
 }
 #plan{
-    height: 760px;
+    height: auto;
     background-color: #a5d2fb;
     padding: 0 50px;   
+}
+#plan p{
+    padding-bottom: 80px;
 }
 table{
     width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
+}
+.plan-basic{
+    width: 100%;
+    border-top: solid 3px #fff ;
+    border-left: solid 3px #fff;
+    margin-bottom: 60px;
+
 }
 .plan-table{
     width: 100%;
@@ -308,6 +320,10 @@ table td:empty {
     text-align: center;
     background-color: #191970;  
     font-size: 1.75rem;
+    padding-top :60px ;
+}
+.copyright{
+    margin: 0;
 }
 #footer #summary{
     display: contents;
@@ -319,7 +335,7 @@ table td:empty {
 #footer .footer-menu{
     display: flex;
     justify-content: center;
-    margin: 30px 0 60px 0;
+    margin: 80px  0;
 }
 .footer-menu li{
     border-right: solid 1px #fff;
