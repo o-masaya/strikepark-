@@ -364,6 +364,9 @@ table td:empty {
         height: 700px;
         object-fit: cover;
     }
+    .item .more::after{
+        width: 38%;
+    }
     #plan{
         height: auto;
     }
@@ -376,33 +379,41 @@ table td:empty {
 }
 /*スマホレスポンシブ*/
 @media(max-width:768px){
+    .header-logo{
+       width: 10%;
+    }
+    .site-title{
+        margin-top: 3%;
+        margin-left: 10%;
+        font-size: 2.85rem;
+    }
+    .hamburger{
+        width: 100px;
+        height: 85px;
+    }
+    .hamburger span:nth-child(1){
+         top: 30px;
+    }
+    .hamburger span:nth-child(2){
+         top: 45px;
+    }
+    .hamburger span:nth-child(3){
+         top: 59px;
+    }
     #main-visual img{
         height: 300px;
     }
-    #main-visual .text{
-       position: absolute;
-       top: 25%;
-        left: 8%;
-        right: 0;
-    }
-    #main-visual p{
-        font-weight: bold;
-        font-size: 80%;
-        color: #579cf7;
-    }
     #charm{
-        height: 1800px;
+        height: auto;
     }
     .charmcontent{
         display: block;
         justify-content: space-between;
     }
-    .charmcontent  ul{
-        align-content: center;
-    }
     .charmcontent li{
-        width: 80%;
+        width: 65%;
         margin:0 auto;
+        margin-bottom: 30px;
         padding: 0;
     }
     .charmcontent img{
@@ -410,19 +421,34 @@ table td:empty {
         height: 30%;
 
     }
+    #facility{
+        height: auto;
+    }
     .item{
+        width: 100%;
         margin: 0 auto;
     }
     .item img{
+        width: 100%;
+        height: 50%;
         margin-bottom: 20px;
+    }
+    .item .more::after{
+        width: 23%;
     }
     .bath{
         display: block;
     }
     .bar{
-        display: block;
+        flex-direction: column-reverse;
     }
     .viking{
         display: block;
+    }
+    #address p{
+        font-size: 1.5rem;
+    }
+    .footer-menu{
+        padding: 20px;
     }
 }
