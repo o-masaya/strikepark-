@@ -1,22 +1,25 @@
+
 html{
     font-size: 100%;
 }
 body{
     color: #121212;
-    font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
 }
 a{
     color: #fff;
     text-decoration: none;
 }
+a:hover{
+    opacity: 0.7;
+}
 li{
     list-style: none;
 }
 img{
-    max-width: 100%;
+    width: 100%;
 }
 p{
-    font-size: 120%;
+    font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
 }
 
 .header-logo{
@@ -29,8 +32,8 @@ p{
 }
 #navi{
     width: 100%;
-    height: 50vh;
-    background-color: #3851cf;
+    height: 100vh;
+    background-color: #041ea0;
     color: #fff;
     position: fixed;
     top: 0;
@@ -51,7 +54,7 @@ p{
 }
 .nav-menu a{
     font-weight: bold;
-    font-size: 120%;
+    font-size: 1.75rem;
 }
 .hamburger{
     width: 100px;
@@ -104,28 +107,15 @@ p{
     font-size: 300%;
     color: #121212;
     margin-top: 60px;
-    margin: 20px 0 0px 110px;
+    margin: 40px 0 0px 110px;
+}
+#main-visual{
+    
 }
 #main-visual img{
     width: 100%;
-    height: 600px;
     object-fit: cover;
-    margin-bottom: 120px;
-}
-#main-visual .text{
-    position: absolute;
-    top: 45%;
-    left: 15%;
-    right: 0;
     
-}
-#main-visual a{
-    margin: 0 auto;
-    font-size: 3rem;
-}
-#main-visual p{
-    font-size: 120%;
-    color: #579cf7;
 }
 .wrapper{
     max-width: 1960px;
@@ -133,16 +123,17 @@ p{
     padding:0 5%;
 }
 .section-title{
+    font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;;
     font-size: 250%;
     text-align: left;
-    margin-bottom: 60px;
-    margin: 0 0 20px;
-    padding: 0 0 10px;
+    margin-bottom: 80px;
+    padding: 80px 0 15px 0;
     background: url(https://www.round1.co.jp/common/img/bg_dot01.gif) repeat-x left bottom;
 }
 #charm{
-    height: 400px;
-    margin-bottom: 60px;
+    height: 900px;
+    background-color: #a5d2fb;
+    padding-bottom: 60px;
 }
 .charmcontent{
    width: 100%;
@@ -152,139 +143,335 @@ p{
     margin:0 auto;
     margin-top: 30px;
 }
+.charmcontent img{
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+}
 .charmcontent .name{
-    font-size: 150%;
+    text-align: center;
+    font-size: 2rem;
     font-weight: bold;
     margin-bottom: 20px;
     padding: 10px;
 }
 .charmcontent p{
-    padding: 10px;
-    font-size: 150%;
+    text-align: left;
+    font-size:1.25rem;
+    line-height: normal;
 }
 .charmcontent li{
     width: 31.9%;
     box-sizing: border-box;
-    font-size: 1em;
-    line-height: 1.5em;
+    font-size: 1.25em;
+    line-height: 3.5em;
     text-align: center;
     padding:15px;
     padding-bottom: 60px;
+    margin-bottom: 80px;
     position: relative;
     background: #fff;
     border: #191970 solid 0.4167em;
 }
 
 #facility{
-    margin-bottom: 60px;
+    height: auto;
+    background-color: #f0f0f0;
 }
 .item{
     width: 48%;
     text-align: center;
 }
 .item p{
-    margin-bottom: 30px;
+    font-size: 1.75rem;
     padding: 15px;
+    text-align: left;
+    margin-bottom: 5px ;
 }
 .item-title{
+    font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
     font-size: 250%;
     margin-bottom: 20px;
+    text-align: center;
 }
 .item img{
     width: 100%;
     border-radius: 20%;
 }
+.item .more{
+    text-align: right;
+    font-size: 20px;
+    margin-top: 24px;
+    position: relative;
+}
+.item .more::after{
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    content: '';
+    width: 20%;
+    height: 1px;
+    background: #3E4550;
+    transform: scale(1, 1);
+    transform-origin: left top;
+    transition: transform 0.3s;
+}
+.item .more a{
+    font-size: 2rem;
+    margin-right: 75px;
+    color:#121212; ;
+}
+.sub{
+font-weight: bold;
+font-size: 1.9rem;
+text-align: center;
+margin-bottom: 30px;
+padding: 15px;
+font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+}
 .bath{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 40px 0;
+    padding: 60px 0;
     margin-bottom: 60px;
 }
 .bar{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding:40px 0;
+    padding:60px 0;
     margin-bottom: 60px;
 }
 .viking{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 120px;
+    padding: 60px 0 200px 0;
+
 }
 #plan{
-    padding: 0 16px;   
+    height: auto;
+    background-color: #a5d2fb;
+    padding: 0 50px;   
+}
+#plan p{
+    padding-bottom: 80px;
 }
 table{
     width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
 }
+.plan-basic{
+    width: 100%;
+    border-top: solid 3px #fff ;
+    border-left: solid 3px #fff;
+    margin-bottom: 60px;
+
+}
 .plan-table{
     width: 100%;
-    border-top: solid 1px #808080 ;
-    border-left: solid 1px #808080;
+    border-top: solid 3px #fff ;
+    border-left: solid 3px #fff;
 }
 .adult{
     width: 16%;
 }
  th,td{
+    font-size: 150%;
     font-weight: bold;
     padding: 30px;
     margin: 30px;
-    border-right: solid 1px #c3c3c3;
-    border-bottom: solid 1px #c3c3c3;
+    border-right: solid 3px #fff;
+    border-bottom: solid 3px #fff;
     text-align: center;
 }
 th{
-    background-color: #b0c4de;
+    color: #fff;
+    background-color: #024399;
 }
 table td:empty {
     background-image: linear-gradient(to top right,
     transparent, transparent 49%,
-       black 49%,
-       black 51%,
+    #fff 49%,
+    #fff 51%,
       transparent 51%, transparent);
       background-color: none;
   }
   table th:empty {
     background-image: linear-gradient(to top right,
     transparent, transparent 49%,
-       black 49%,
-       black 51%,
+    #fff 49%,
+    #fff 51%,
       transparent 51%, transparent);
   }
 .uni-student, .high-student{
     width: 28%;
 }
-#footer p{
-    height: 100px;
-    text-align: center;
+#plan p{
+   font-size: 1.5rem;
+}
+#footer{
+    height: 450px;
     background-color: #191970;
     color: #fff;
 }
 
+#footer p{
+    height: 100px;
+    text-align: center;
+    background-color: #191970;  
+    font-size: 1.75rem;
+    padding-top :60px ;
+}
+.copyright{
+    margin: 0;
+}
+#footer #summary{
+    display: contents;
+}
+#footer li p{
+    text-align: left;
+    font-size: 2rem;
+}
+#footer .footer-menu{
+    display: flex;
+    justify-content: center;
+    margin: 80px  0;
+}
+.footer-menu li{
+    border-right: solid 1px #fff;
+    font-size: 1.25rem;
+    padding:0 20px;
+}
+.more  a:hover{
+    opacity: 0.7;
+    color:#191970;
+}
+/*タブレットレスポンシブ*/
 @media(max-width:960px){
     #main-visual img{
-        height: 300px;
-    }
-    #main-visual .text{
-       position: absolute;
-       top: 15%;
-        left: 8%;
-        right: 0;
-    }
-    #main-visual p{
-        font-weight: bold;
-        font-size: 80%;
-        color: #579cf7;
+        height: auto;
     }
     #charm{
-        margin-bottom: 120px;
+        height:auto;
+    }
+    p .name{
+        font-size: 1.25rem;
+    }
+    .item img{
+        border-radius: 5%;
+        width: 100%;
+        height: 700px;
+        object-fit: cover;
+    }
+    .item .more::after{
+        width: 38%;
+    }
+    #plan{
+        height: auto;
     }
     table{
         width: 100%;
+    }
+    #plan{
+        height: auto;
+    }
+}
+/*スマホレスポンシブ*/
+@media(max-width:768px){
+    .header-logo{
+       width: 10%;
+    }
+    .site-title{
+        margin-top: 3%;
+        margin-left: 10%;
+        font-size: 2.85rem;
+    }
+    .hamburger{
+        width: 100px;
+        height: 85px;
+    }
+    .hamburger span:nth-child(1){
+         top: 30px;
+    }
+    .hamburger span:nth-child(2){
+         top: 45px;
+    }
+    .hamburger span:nth-child(3){
+         top: 59px;
+    }
+    #main-visual img{
+        height: 300px;
+    }
+    #charm{
+        height: auto;
+    }
+    .charmcontent{
+        display: block;
+        justify-content: space-between;
+    }
+    .charmcontent li{
+        width: 65%;
+        margin:0 auto;
+        margin-bottom: 30px;
+        padding: 0;
+    }
+    .charmcontent img{
+        width: 30%;
+        height: 30%;
+
+    }
+    #facility{
+        height: auto;
+    }
+    .item{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .item img{
+        width: 100%;
+        height: 50%;
+        margin-bottom: 20px;
+    }
+    .item .more::after{
+        width: 23%;
+    }
+    .bath{
+        display: block;
+    }
+    .bar{
+        flex-direction: column-reverse;
+    }
+    .viking{
+        display: block;
+    }
+    #plan{
+        height: auto;
+    }
+    .plan-basic,.plan-table{
+        width: 100%;
+    }
+     th{
+        font-size: 0.875rem;
+    }
+     td{
+        font-size: 0.875rem;
+    }
+    #plan{
+        height: auto;
+    }
+    #plan p{
+        font-size: 0.9rem;
+    }
+    #address p{
+        font-size: 1.5rem;
+    }
+    .footer-menu{
+        padding: 20px;
+    }
+    .footer-menu li{
+        font-size: 0.9rem;
     }
 }
