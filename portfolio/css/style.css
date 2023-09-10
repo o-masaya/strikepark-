@@ -80,4 +80,5 @@ nav li a {
 }
 #html,#css,#jquery{
     width: 33%;
-}
+    margin:0 auto;
+    }
